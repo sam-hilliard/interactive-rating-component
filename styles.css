@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* general resets */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100%;
+}
+
+button {
+    border: none;
+}
+
+/* global variables */
+
+:root {
+    /* colors */
+
+    --primary-color: hsl(25, 97%, 53%);
+
+    --medium-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --darker-blue: hsl(216, 12%, 8%);
+    
+
+    --heading-font-color: hsl(0, 0%, 100%);
+    --primary-font-color: hsl(217, 12%, 63%);
+}
+
+/* Typography */
+body {
+    font-size: 0.9375rem;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--darker-blue);
+}
+
+p {
+    font-weight: 400;
+    color: var(--primary-font-color);
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--heading-font-color);
+}
+
+/* Utility classes */
+.round-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    color: var(--primary-font-color);
+}
+
+
+/* Component styles */
+
+.card {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 325px;
+    border-radius: 1rem;
+    /* background: linear-gradient(var(--dark-blue), var(--darker-blue)); */
+}
+
+/* rating card styles */
+.rating-btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: var(--heading-font-color);
+
+    padding: 1rem 0;
+    border-radius: 2rem;
+
+    letter-spacing: 0.2rem;
+}
+
+
+/* thank you card */
+.thankyou {
+    justify-items: center;
+    text-align: center;
+}
+
+.rating-result-container {
+    background-color: var(--dark-blue);
+    color: var(--primary-color);
+
+    padding: 0.5rem;
+    border-radius: 2rem;
+}
