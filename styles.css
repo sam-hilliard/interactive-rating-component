@@ -67,13 +67,25 @@ h1 {
 
 /* Component styles */
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .card {
-    display: grid;
+    display: none;
     gap: 1.5rem;
     padding: 1.5rem;
     max-width: 325px;
     border-radius: 1rem;
-    background: radial-gradient(circle at top, var(--dark-blue), transparent 150%)
+    background: radial-gradient(circle at top, var(--dark-blue), transparent 150%);
+
+}
+
+.active {
+    display: grid;
 }
 
 /* rating card styles */
