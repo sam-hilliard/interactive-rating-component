@@ -140,3 +140,13 @@ button {
     padding: 0.5rem;
     border-radius: 2rem;
 }
+
+footer {
+    color: var(--heading-font-color);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: var(--primary-color);
+}
